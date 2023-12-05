@@ -13,5 +13,15 @@ class Main {
   thread t2 = new thread(v1);
   thread t3 = new thread(v2);
   thread t4 = new thread(v3);
+
+  t1.start();
+  t2.start();
+  t3.start();
+  t4.start();
+
+  t1.join();
+  t2.join();
+  t3.join();
+  t4.join();
   
 }
